@@ -12,6 +12,9 @@ Download and install LXML
 	
 	pip install lxml
 
+Clone this repo
+
+	git clone https://github.com/brichbourg/FindMac.git
 
 
 ##Usage
