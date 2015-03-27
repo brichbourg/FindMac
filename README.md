@@ -1,5 +1,13 @@
 # Nexus 9000 - FindMac.py
 
+##Authors:
+
+Koorapati, Sahaja Sahaja.Koorapati@nexusis.com
+
+Richbourg, Brantley Brantley.Richbourg@NexusIS.com
+
+Sanchez, Milo milo.sanchez@nexusis.com
+
 ##Installation
 
 Here are the required modules:
