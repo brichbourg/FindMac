@@ -1,5 +1,18 @@
-README
+#Installation
 
+Here are the required modules:
+
+Downlaod PyYAML from http://pyyaml.org/wiki/PyYAML
+
+	sudo python setup.py install
+
+Download and install LXML
+	
+	pip install lxml
+
+
+
+#Usage
 This script is designed to take a mac address, entered in the format xxxx.xxxx.xxxx and find its location on a set of N9Ks.  The list of N9Ks is in a file:
 
 File Format - List the mgmt 0 address of each switch on a separate line.
@@ -10,7 +23,7 @@ File Format - List the mgmt 0 address of each switch on a separate line.
 
 To run the script, please enter the following:
 
-python findMac.py xxxx.xxxx.xxxx file.txt username password
+	python findMac.py xxxx.xxxx.xxxx file.txt username password
 
 NOTE: The mac address must be in the following format: xxxx.xxxx.xxxx
 
