@@ -29,6 +29,7 @@ def show_hardware(sw):
 	getdata = sw.show('show hardware')
 	show_hw_dict = xmltodict.parse(getdata[1])
 	data = show_hw_dict['ins_api']['outputs']['output']['body']
+	print "=" * 50
 	print "Searching in HOSTNAME: ",data['host_name']
 	return data
 
