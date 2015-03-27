@@ -14,13 +14,19 @@ def show_mac_addr(sw,mac):
 	show_mac_dict = xmltodict.parse(getdata[1])
 	data = show_mac_dict['ins_api']['outputs']['output']['body']['TABLE_mac_address']['ROW_mac_address']
 	mac_addr_list = {}
+	foundmac = False
 	for each in data:
 		if 'disp_mac_addr' in each.keys():
 			key = each['disp_mac_addr']
 			mac_addr_list[key] = each['disp_mac_addr']
 			if each['disp_mac_addr'] == mac and each['disp_port'].find('port') == -1:
 				print "PORT: ", each['disp_port']
-				print "VLAN: ", each['disp_vlan']			
+				print "VLAN: ", each['disp_vlan']
+				foundmac = True
+	
+	if foundmac == False:
+		print 'MAC address not found.'	
+
 	print "=" *50
 	return each['disp_vlan']
 
