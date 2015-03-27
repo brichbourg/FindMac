@@ -1,4 +1,6 @@
-#Installation
+# Nexus 9000 - FindMac.py
+
+##Installation
 
 Here are the required modules:
 
@@ -12,7 +14,7 @@ Download and install LXML
 
 
 
-#Usage
+##Usage
 This script is designed to take a mac address, entered in the format xxxx.xxxx.xxxx and find its location on a set of N9Ks.  The list of N9Ks is in a file:
 
 File Format - List the mgmt 0 address of each switch on a separate line.
